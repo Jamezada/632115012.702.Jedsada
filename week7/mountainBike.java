@@ -1,7 +1,7 @@
 package week7;
 
 public class mountainBike extends Bicycle {
-    int gear;
+    private int gear;
 
     public mountainBike(int speed) {
         super(speed);
@@ -13,7 +13,7 @@ public class mountainBike extends Bicycle {
     }
 
     @Override
-    public void speedup() {
+    protected void speedup() {
         if (speed + 5 * gear > 99)
             speed = 99;
         else
@@ -22,7 +22,7 @@ public class mountainBike extends Bicycle {
     }
 
     @Override
-    public void breakBC() {
+    protected void breakBC() {
         speed -= 5;
         System.out.println("Break!!");
     }

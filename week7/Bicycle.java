@@ -1,7 +1,7 @@
 package week7;
 
 public class Bicycle {
-    int speed;
+    protected int speed;
 
     public Bicycle(int speed) {
         if (speed > 99)
@@ -10,7 +10,7 @@ public class Bicycle {
             this.speed = speed;
     }
 
-    public void speedup() {
+    protected void speedup() {
         if (speed + 5 > 99)
             speed = 99;
         else
@@ -18,12 +18,12 @@ public class Bicycle {
         System.out.println("Speed up!!");
     }
 
-    public void breakBC() {
+    protected void breakBC() {
         speed -= 5;
         System.out.println("Break!!");
     }
 
-    public void speedcheck() {
+    protected void speedcheck() {
         System.out.println("Bicycle speed is " + speed);
     }
 }
