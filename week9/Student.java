@@ -9,7 +9,7 @@ public class Student {
     }
     //overiding toString()
     public String toString(){
-        return "My first name "+firstname+" last name "+lastname;
+        return "My first name "+firstname+" last name "+lastname ;
     }
     public static void main(String[] args) {
         Student p = new Student("Jedsada","Kampen");
