@@ -1,8 +1,8 @@
 package week10;
 
-public class Dog extends Animal {
+public class Fish extends Animal {
     @Override
     public String roar() {
-        return "Box Box";
+        return "...";
     }
 }
